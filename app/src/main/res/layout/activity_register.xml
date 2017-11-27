@@ -41,7 +41,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Email : "
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
         android:textColorHint="@android:color/background_light"

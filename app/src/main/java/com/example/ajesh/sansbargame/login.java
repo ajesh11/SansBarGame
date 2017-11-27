@@ -35,11 +35,13 @@ public class login extends AppCompatActivity {
                 String password = pass.getText().toString();
                 SharedPreferences sharedPreferences = getSharedPreferences("mypref", MODE_PRIVATE);
                 String details = sharedPreferences.getString(username + password + "data", "wrong");
+                String detailss = sharedPreferences.getString(username + password + "email", "wro");
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("display", details);
+                editor.putString("dis",detailss);
                 editor.commit();
 
-                if (details == "wrong") {
+                if ((details.equals("wrong"))&&(detailss.equals("wro"))) {
                     Toast.makeText(login.this, "UserName and Password is incorrect", Toast.LENGTH_LONG).show();
                     user.setText("");
                     pass.setText("");
@@ -69,13 +71,17 @@ public class login extends AppCompatActivity {
 
 
                 }
+                else if(username.isEmpty()|| password.isEmpty()){
+                    Toast.makeText(login.this, "Fill UserName and Password", Toast.LENGTH_LONG).show();
+                }
 
                      else {
-                        Intent intent = new Intent(login.this, MainActivity.class);
-                        startActivity(intent);
                     user.setText("");
                     pass.setText("");
                     user.requestFocus();
+                        Intent intent = new Intent(login.this, MainActivity.class);
+                        startActivity(intent);
+
                     }
 
 
