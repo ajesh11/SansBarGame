@@ -302,4 +302,15 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:text="25" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
 </RelativeLayout>
