@@ -16,7 +16,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
 
-        android:hint="Email or User Name: "
+        android:hint="Email or User Name : "
 
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
