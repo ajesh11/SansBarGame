@@ -67,10 +67,12 @@ private ImageButton ib;
                         SharedPreferences.Editor edit = sharedPreferences.edit();
                         edit.putString( us + ps + "data", "ajesh");
                         edit.putString(e+ps+"email","hellow");
+                        edit.putString(us+" "+ps+" "+e,"value");
                         edit.commit();
                         Intent intents = new Intent(register.this, MainActivity.class);
                         startActivity(intents);
                         register.this.finish();
+
                     }
                 }
                 else {
